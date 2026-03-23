@@ -85,7 +85,7 @@ CRISP-DM(Cross-Industry Standard Process for Data Mining)은 데이터 마이닝
 
 **포함된 내용 (04번 문서):**
 
-- 3개 모델의 원리 상세 설명 (XGBoost 5단계, LSTM 게이트 메커니즘, LR 한계)
+- 4개 모델의 원리 상세 설명 (Dummy, Linear Regression, XGBoost, LSTM) + Weighted Average 앙상블
 - 제외 모델 정당화 (Transformer, Prophet, ARIMA, RF)
 - 하이퍼파라미터 권장치 (XGBoost: max_depth 5~6, lr 0.01~0.1 등)
 - LSTM 주의사항: 정규화, dropout, learning rate, early stopping
