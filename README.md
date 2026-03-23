@@ -17,9 +17,9 @@
 ## 빠른 요약
 
 - **데이터**: 네이버 DataLab API (무료) + 썸트렌드 1개월 (18만원)
-- **키워드**: 과자/베이커리 Top 500 (2022~현재, 4년)
-- **피처**: 38개 (XGBoost) / 10~15채널 × 60일 + 연관어벡터 20차원 (LSTM) — 6개 그룹 (검색+소셜+교차+컨텍스트+연관어벡터+경제)
+- **키워드**: 과자/베이커리 Top 500 (2022\~현재, 4년)
+- **피처**: 38개 (XGBoost) / 10\~15채널 × 60일 + 연관어벡터 20차원 (LSTM) — 6개 그룹 (검색+소셜+교차+컨텍스트+연관어벡터+경제)
 - **모델**: Dummy + Linear Reg. (베이스라인) → XGBoost → LSTM → Weighted Average Ensemble
-- **타겟**: virality_score (바이럴 강도, Z-score 기반) + peak_timing (피크 시점, 1~30일)
+- **타겟**: virality_score (바이럴 강도, Z-score 기반) + peak_timing (피크 시점, 1\~30일)
 - **컴퓨팅**: Colab 무료로 충분 (LSTM 12분/회, XGBoost 15초/회)
 - **발표 킬러**: Top-10 Precision + "평균 N일 오차로 피크 예측" + SHAP 설명 + ML vs DL 비교 + ablation study

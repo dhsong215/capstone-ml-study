@@ -72,7 +72,7 @@ CRISP-DM(Cross-Industry Standard Process for Data Mining)은 데이터 마이닝
 - Join 전략: (키워드, 날짜) 기준 outer join
 - 연관어 TF-IDF + PCA 20차원 벡터 자동화 (sklearn 5줄)
 - 경제지표 월별→일별 매핑
-- XGBoost용 1행 × 38열 스냅샷 vs LSTM용 60행 × 10~15열 시퀀스
+- XGBoost용 1행 × 38열 스냅샷 vs LSTM용 60행 × 10\~15열 시퀀스
 
 **빠진 내용:**
 
@@ -87,7 +87,7 @@ CRISP-DM(Cross-Industry Standard Process for Data Mining)은 데이터 마이닝
 
 - 4개 모델의 원리 상세 설명 (Dummy, Linear Regression, XGBoost, LSTM) + Weighted Average 앙상블
 - 제외 모델 정당화 (Transformer, Prophet, ARIMA, RF)
-- 하이퍼파라미터 권장치 (XGBoost: max_depth 5~6, lr 0.01~0.1 등)
+- 하이퍼파라미터 권장치 (XGBoost: max_depth 5\~6, lr 0.01\~0.1 등)
 - LSTM 주의사항: 정규화, dropout, learning rate, early stopping
 - 학습 시간 추정 및 클라우드 비용
 - Dual target 구조 (virality_score + peak_timing)
@@ -148,11 +148,11 @@ CRISP-DM(Cross-Industry Standard Process for Data Mining)은 데이터 마이닝
 |---|---|---|---|
 | 1 | Evaluation: 더미 모델 베이스라인 추가 | 10분 (코드 3줄) | 성능 수치의 의미를 해석 가능하게 만듦 |
 | 2 | Evaluation: 모델 비교표 양식 사전 정의 | 15분 | 실험 후 바로 채울 수 있는 틀 확보 |
-| 3 | Business: 이해관계자 시나리오 1~2개 추가 | 20분 | 발표 때 "누구를 위한 모델인가" 설명 가능 |
+| 3 | Business: 이해관계자 시나리오 1\~2개 추가 | 20분 | 발표 때 "누구를 위한 모델인가" 설명 가능 |
 | 4 | Deployment: 배포 형태 결정 + 모델 저장 방식 | 20분 | CRISP-DM 6단계 완성, 발표 시 완결성 |
 | 5 | Deployment: 모니터링/재학습 계획 (계획 수준) | 15분 | 실무 감각 어필 |
 | 6 | Modeling: 하이퍼파라미터 튜닝 전략 명시 | 15분 | 실험 계획 구체화 |
-| 7 | Data Understanding: EDA 결과 추가 (데이터 수집 후) | 1~2시간 | 데이터 수집 이후 작업 |
+| 7 | Data Understanding: EDA 결과 추가 (데이터 수집 후) | 1\~2시간 | 데이터 수집 이후 작업 |
 
 ---
 
