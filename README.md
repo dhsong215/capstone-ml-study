@@ -12,6 +12,7 @@
 | 04 | [모델 선택 및 비교 분석](./04-모델-선택-및-비교-분석.md) | XGBoost/LSTM/LR 원리, 다각도 비교, 학술 근거, **학습 시간 추정 및 클라우드 비용 분석** |
 | 05 | [평가 지표 및 데이터 파이프라인](./05-평가-지표-및-데이터-파이프라인.md) | virality_score 산출, 평가 지표(RMSE, Top-K, F1), 수집→전처리→피처→학습 4단계 파이프라인 |
 | 06 | [전체 프로젝트 설계 요약](./06-전체-프로젝트-설계-요약.md) | 전체 조감도, 핵심 결정 요약, 참고 논문 목록 |
+| 07 | [CRISP-DM 매핑 분석](./07-CRISP-DM-매핑-분석.md) | 6단계 커버리지 분석, 결핍 항목 식별, 보완 우선순위 |
 
 ## 빠른 요약
 
@@ -19,6 +20,6 @@
 - **키워드**: 과자/베이커리 Top 500 (2022~현재, 4년)
 - **피처**: 38개 (XGBoost) / 10~15채널 × 60일 + 연관어벡터 20차원 (LSTM) — 6개 그룹 (검색+소셜+교차+컨텍스트+연관어벡터+경제)
 - **모델**: XGBoost Regressor + LSTM Regressor + Logistic Regression
-- **타겟**: virality_score (연속값, Z-score 기반)
+- **타겟**: virality_score (바이럴 강도, Z-score 기반) + peak_timing (피크 시점, 1~30일)
 - **컴퓨팅**: Colab 무료로 충분 (LSTM 12분/회, XGBoost 15초/회)
-- **발표 킬러**: Top-10 Precision + SHAP 설명 + ML vs DL 비교 + ablation study
+- **발표 킬러**: Top-10 Precision + "평균 N일 오차로 피크 예측" + SHAP 설명 + ML vs DL 비교 + ablation study
